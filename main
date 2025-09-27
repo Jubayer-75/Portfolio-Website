@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JB's Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/@tailwindcss/forms"></script>
+  <script src="https://unpkg.com/@tailwindcss/typography"></script>
+  <script src="https://unpkg.com/@tailwindcss/aspect-ratio"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #0f0f0f;
+      color: #f3f3f3;
+    }
+    .btn-animated {
+      background: linear-gradient(270deg, #ff00cc, #3333ff, #00ffcc, #ff9900);
+      background-size: 600% 600%;
+      animation: rainbow 8s ease infinite;
+      transition: transform 0.2s;
+    }
+    .btn-animated:hover {
+      transform: scale(1.05);
+    }
+    @keyframes rainbow {
+      0%{background-position:0% 50%}
+      50%{background-position:100% 50%}
+      100%{background-position:0% 50%}
+    }
+  </style>
+</head>
+<body class="dark">
+  <header class="text-center py-20 bg-gradient-to-r from-purple-800 via-pink-700 to-red-600">
+    <h1 class="text-5xl font-bold mb-4">Hi, I'm <span class="text-yellow-300">Jubayer</span> 👋</h1>
+    <p class="text-xl">Student | Web Developer | Future Doctor</p>
+    <div class="mt-6">
+      <a href="#projects" class="btn-animated px-6 py-3 rounded-full text-white font-semibold shadow-lg">See My Work</a>
+    </div>
+  </header>
+
+  <main class="max-w-5xl mx-auto px-6">
+    <section id="about" class="py-16">
+      <h2 class="text-3xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-600">About Me</h2>
+      <p class="text-lg leading-relaxed">I'm passionate about <span class="text-pink-400">AI</span>, <span class="text-green-400">Web Development</span>, and <span class="text-yellow-400">Medical Science</span>. Always exploring new tech and building creative projects.</p>
+    </section>
+
+    <section id="projects" class="py-16">
+      <h2 class="text-3xl font-bold mb-10 text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-orange-500">Projects</h2>
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="p-6 rounded-2xl bg-gradient-to-br from-gray-800 to-gray-900 shadow-xl hover:scale-105 transition">
+          <h3 class="text-2xl font-semibold mb-3">⚡ Machine Learning Mini Bot</h3>
+          <p class="text-gray-300">A small ML bot that answers basic questions using PyTorch.</p>
+        </div>
+        <div class="p-6 rounded-2xl bg-gradient-to-br from-gray-800 to-gray-900 shadow-xl hover:scale-105 transition">
+          <h3 class="text-2xl font-semibold mb-3">🌐 Weather App</h3>
+          <p class="text-gray-300">Weather forecast app built with free API & modern design.</p>
+        </div>
+        <div class="p-6 rounded-2xl bg-gradient-to-br from-gray-800 to-gray-900 shadow-xl hover:scale-105 transition">
+          <h3 class="text-2xl font-semibold mb-3">📖 Chemistry Notes Generator</h3>
+          <p class="text-gray-300">Auto-generates neat chemistry notes from structured data.</p>
+        </div>
+        <div class="p-6 rounded-2xl bg-gradient-to-br from-gray-800 to-gray-900 shadow-xl hover:scale-105 transition">
+          <h3 class="text-2xl font-semibold mb-3">💻 Portfolio Website</h3>
+          <p class="text-gray-300">My own modern portfolio site using Tailwind CSS.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="py-16">
+      <h2 class="text-3xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-teal-500">Contact Me</h2>
+      <div class="flex flex-col items-center gap-4">
+        <a href="mailto:demo@email.com" class="btn-animated px-6 py-3 rounded-full text-white font-semibold shadow-lg">Email Me</a>
+        <a href="https://github.com/yourusername" target="_blank" class="btn-animated px-6 py-3 rounded-full text-white font-semibold shadow-lg">GitHub</a>
+        <a href="#" class="btn-animated px-6 py-3 rounded-full text-white font-semibold shadow-lg">Download Resume</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="py-8 text-center text-gray-500 bg-black/70">
+    <p>© 2025 Jubayer. All rights reserved.</p>
+  </footer>
+</body>
+</html>

@@ -62,7 +62,7 @@
           <p class="text-gray-300">Auto-generates neat chemistry notes from structured data.</p>
         </div>
         <div class="p-6 rounded-2xl bg-gradient-to-br from-gray-800 to-gray-900 shadow-xl hover:scale-105 transition">
-          <h3 class="text-2xl font-semibold mb-3">💻 Portfolio Website</h3>
+          <h3 class="text-2xl font-semibold mb-3">💻 Portfolio Website(jubayer)</h3>
           <p class="text-gray-300">My own modern portfolio site using Tailwind CSS.</p>
         </div>
       </div>
